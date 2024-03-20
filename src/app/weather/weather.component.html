@@ -1,0 +1,23 @@
+<main class="{{bg}}">
+    <div class="top-bar">
+        <h1>Weather</h1>
+        <section class="weather-box">
+            <input [(ngModel)]="city" type="text" id="locationInput" placeholder="Enter a city">
+            <button (click)="getWeather()" id="searchButton">Search</button>
+        </section>
+    </div>
+    <div class="content">
+        <div class="title">
+            <h1>{{title}}</h1>
+        </div>
+        <div class="weather-details">
+            <div class="left">
+                <p class="temperature">{{temp}}°C</p>
+                <p class="desc">{{desc}}</p>
+            </div>
+            <div class="right">
+                <p class="place">{{name}}</p>
+            </div>
+        </div>
+    </div>
+</main>
